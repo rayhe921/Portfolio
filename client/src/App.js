@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import logo from "./logo.svg";
 import "./App.css";
 import About from "./pages/About";
+import Contact from "./pages/Contact"
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
         ></Navbar>
         <Switch>
           <Route exact path="/" component={About} />
-          {/*<Route exact path="/main" component={Display} /> */}
+          <Route exact path="/contact" component={Contact} />
 
         </Switch>
       </Router>
