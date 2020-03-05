@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Collection from "../components/Collection";
 import {Container, Row, Col} from "../components/Grid";
-import resume from "../utils/Raymond_He_Resume.pdf";
+import resume from "../utils/Resume_Raymond_He.pdf";
 
 class Contact extends Component {
 
