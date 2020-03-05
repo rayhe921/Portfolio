@@ -5,6 +5,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact"
+import Portfolio from "./pages/Portfolio"
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
-
+          <Route exact path="/portfolio" component={Portfolio} />
         </Switch>
       </Router>
     );

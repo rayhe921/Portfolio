@@ -3,7 +3,7 @@ import Collection from "../components/Collection";
 import {Container, Row, Col} from "../components/Grid";
 import resume from "../utils/Raymond_He_Resume.pdf";
 
-class About extends Component {
+class Contact extends Component {
 
   // Handles updating component state when the user types into the input field
 
@@ -27,4 +27,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Contact;

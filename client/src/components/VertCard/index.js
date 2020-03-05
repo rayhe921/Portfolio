@@ -8,9 +8,10 @@ function VertCard(props) {
         <div className="card">
           <div className="card-image">
             <img src={props.image} />
-            <span className="card-title">{props.title}</span>
+            
           </div>
           <div className="card-content">
+          <span className="card-title">{props.title}</span>
             <p>{props.summary}</p>
           </div>
           <div className="card-action">
