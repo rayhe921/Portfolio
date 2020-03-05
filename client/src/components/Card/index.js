@@ -7,7 +7,7 @@ function Card(props) {
       <h2 className="header white-text">{props.title}</h2>
       <div className="card horizontal z-depth-2 border">
         <div className="card-image img-size">
-          <img src={props.img} />
+          <img src={props.img} alt={props.title} />
           </div>  
           <div className="card-stacked">
             <div className="card-content">

@@ -7,7 +7,7 @@ function VertCard(props) {
       <div className="col s12 m7">
         <div className="card">
           <div className="card-image">
-            <img src={props.image} />
+            <img src={props.image} alt={props.title} />
             
           </div>
           <div className="card-content">
@@ -15,10 +15,10 @@ function VertCard(props) {
             <p>{props.summary}</p>
           </div>
           <div className="card-action">
-            <a href={props.githubLink}>Github Link</a>
+            <a href={props.githubLink} target="_blank" rel="noopener noreferrer">Github Link</a>
           </div>
           <div className="card-action">
-            <a href={props.projectLink} className="waves-effect waves-light btn">View Project</a>
+            <a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="waves-effect waves-light btn">View Project</a>
           </div>
         </div>
       </div>

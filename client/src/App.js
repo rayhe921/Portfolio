@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar"
-import logo from "./logo.svg";
 import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact"
