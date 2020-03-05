@@ -4,7 +4,7 @@ import "./style.css";
 function VertCard(props) {
   return (
     <div className="row">
-      <div className="col s12 m7">
+      <div className="col s12 m7 l6">
         <div className="card">
           <div className="card-image">
             <img src={props.image} alt={props.title} />
