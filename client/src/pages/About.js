@@ -17,7 +17,7 @@ class About extends Component {
                   a front end or back end developer position. I have completed my full stack web development course and
                   and am eager learn more about software development.
                   <br/>
-                  My current skill sets involve HTML5, CSS3, JavaScript, jQuery, Bootstrap, Node.js, MySQL, MongoDB,
+                  My current skill set involves HTML5, CSS3, JavaScript, jQuery, Bootstrap, Node.js, MySQL, MongoDB,
                   Express, React.js, Git, and Firebase.
                   <br/>
                   I am currently learning Java for a stronger back-end language.
