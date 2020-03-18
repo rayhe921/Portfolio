@@ -5,17 +5,19 @@ import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact"
 import Portfolio from "./pages/Portfolio"
+import Sidebar from "./components/Sidebar";
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar
+        {/* <Navbar
           title="Raymond He"
           linkOne="About"
           linkTwo="Contact"
           linkThree="Portfolio"
-        ></Navbar>
+        ></Navbar> */}
+        <Sidebar></Sidebar>
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
