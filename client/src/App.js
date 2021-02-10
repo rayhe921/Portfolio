@@ -6,18 +6,19 @@ import About from "./pages/About";
 import Contact from "./pages/Contact"
 import Portfolio from "./pages/Portfolio"
 import Sidebar from "./components/Sidebar";
+import M from "materialize-css";
 
 class App extends Component {
   render() {
     return (
       <Router>
+        <Sidebar></Sidebar>
         {/* <Navbar
           title="Raymond He"
           linkOne="About"
           linkTwo="Contact"
           linkThree="Portfolio"
         ></Navbar> */}
-        <Sidebar></Sidebar>
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />

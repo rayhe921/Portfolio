@@ -3,10 +3,10 @@ import "./style.css";
 
 function Card(props) {
   return (
-    <div className="col s12 m7">
+    <div className="col s12 m6 l4">
       <h2 className="header white-text">{props.title}</h2>
       <div className="card horizontal z-depth-2 border">
-        <div className="card-image img-size">
+        <div className="card-image">
           <img src={props.img} alt={props.title} />
           </div>  
           <div className="card-stacked">

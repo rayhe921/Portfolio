@@ -1,43 +1,59 @@
-import React from 'react';
-import M from 'materialize-css';
+import React from "react";
 import "./style.css";
 
+
 function Sidebar(props) {
-  return (
-      <div>
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg" />
+    return (
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>{props.title}</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="/">{props.linkOne}</a>
+                            </li>
+                            <li>
+                                <a href="/contact">{props.linkTwo}</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio">{props.linkThree}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="#">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"/></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  </div>
-  );
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-  // var collapsibleElem = document.querySelector('.collapsible');
-  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+    )
+};
 
 export default Sidebar;

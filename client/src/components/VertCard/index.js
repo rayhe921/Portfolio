@@ -6,7 +6,7 @@ function VertCard(props) {
     <div className="row">
       <div className="col s12 m7 l6">
         <div className="card">
-          <div className="card-image">
+          <div className="card-image image-size">
             <img src={props.image} alt={props.title} />
             
           </div>
