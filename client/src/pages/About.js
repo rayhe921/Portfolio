@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Card from "../components/Card";
 import { Container, Row, Col } from "../components/Grid";
 import Selfie from "../utils/img/selfie.jpeg";
+import "./style.css";
 
 class About extends Component {
 
@@ -10,8 +11,8 @@ class About extends Component {
   render() {
     return (
       <Container>
-        <Row>
-            <Card
+        <div className="wrapper">
+            <Card className="content"
               img={Selfie}
             >
               Welcome to my profile page. My name is Raymond He and I am a full stack developer currently looking for
@@ -26,7 +27,7 @@ class About extends Component {
                   Feel free to reach out to me on my contact page if you know of any opportunities in software development.
        </Card>
        
-        </Row>
+        </div>
       </Container>
     );
   }

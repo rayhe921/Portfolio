@@ -35,11 +35,11 @@ a, a:hover, a:focus {
 
     min-width: 250px;
     max-width: 250px;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 999;
+    z-index: 2;
     background: #544f49;
     color: #fff;
     transition: all 0.3s;
@@ -48,6 +48,7 @@ a, a:hover, a:focus {
 #sidebar .sidebar-header {
     padding: 20px;
     background: #544f49;
+    position: absolute;
 }
 
 #sidebar ul.components {

@@ -28,18 +28,23 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar></Navbar>
+        <Navbar
+        ></Navbar>
+        <div>
         <Sidebar
           title="Raymond He"
           linkOne="Home"
           linkTwo="Contact"
           linkThree="Portfolio"
         ></Sidebar>
+        </div>
+        <div className="content">
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/portfolio" component={Portfolio} />
         </Switch>
+        </div>
       </Router>
     );
   }

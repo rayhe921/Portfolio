@@ -1,0 +1,11 @@
+.wrapper{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.content{
+    position: absolute;
+    top: 54px;
+    left: 250px
+}

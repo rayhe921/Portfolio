@@ -12,20 +12,6 @@ function Sidebar(props) {
 
                 <ul className="list-unstyled components">
                     <p>Dummy Heading</p>
-                    <li className="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
-                        <ul className="collapse list-unstyled" id="homeSubmenu">
-                            <li>
-                                <a href="/">{props.linkOne}</a>
-                            </li>
-                            <li>
-                                <a href="/contact">{props.linkTwo}</a>
-                            </li>
-                            <li>
-                                <a href="/portfolio">{props.linkThree}</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="#">About</a>
                     </li>
