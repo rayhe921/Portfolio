@@ -4,17 +4,17 @@ import "./style.css";
 
 function Sidebar(props) {
     return (
-        <div class="wrapper">
+        <div className="wrapper">
             <nav id="sidebar">
-                <div class="sidebar-header">
+                <div className="sidebar-header">
                     <h3>{props.title}</h3>
                 </div>
 
-                <ul class="list-unstyled components">
+                <ul className="list-unstyled components">
                     <p>Dummy Heading</p>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li className="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
+                        <ul className="collapse list-unstyled" id="homeSubmenu">
                             <li>
                                 <a href="/">{props.linkOne}</a>
                             </li>
@@ -30,8 +30,8 @@ function Sidebar(props) {
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
+                        <ul className="collapse list-unstyled" id="pageSubmenu">
                             <li>
                                 <a href="#">Page 1</a>
                             </li>

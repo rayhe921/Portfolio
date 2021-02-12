@@ -35,7 +35,11 @@ a, a:hover, a:focus {
 
     min-width: 250px;
     max-width: 250px;
-    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
     background: #544f49;
     color: #fff;
     transition: all 0.3s;
@@ -74,4 +78,25 @@ ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #544f49;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
 }

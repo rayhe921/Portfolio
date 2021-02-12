@@ -2,17 +2,18 @@ import React from "react";
 import "./style.css";
 
 function Navbar(props) {
+
   return (
-    <nav>
-    <div className="nav-wrapper grey darken-2 z-depth-3">
-      <a href="/" className="brand-logo">{props.title}</a>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="/">{props.linkOne}</a></li>
-        <li><a href="/contact">{props.linkTwo}</a></li>
-        <li><a href="/portfolio">{props.linkThree}</a></li>
-      </ul>
+    <div id="content">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <button type="button" id="sidebarCollapse" className="btn btn-info">
+            <i className="fas fa-align-right"></i>
+            <span>Toggle Sidebar</span>
+          </button>
+        </div>
+      </nav>
     </div>
-  </nav>
   );
 }
 

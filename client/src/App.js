@@ -1,24 +1,40 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/Navbar"
 import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact"
 import Portfolio from "./pages/Portfolio"
 import Sidebar from "./components/Sidebar";
-import M from "materialize-css";
+import Navbar from "./components/Navbar"
+import { Container, Row, Col } from "./components/Grid";
 
 class App extends Component {
+
+  state = {
+    collapseSidebar: "active"
+  };
+
+  componentDidMount() {
+
+    let sidebarCollapse = (id) => {
+      (id).toggleClass("active");
+    } 
+  //   $('#sidebarCollapse').on('click', function () {
+  //     $('#sidebar').toggleClass('active');
+  // });
+
+  }
+
   render() {
     return (
       <Router>
-        <Sidebar></Sidebar>
-        {/* <Navbar
+        <Navbar></Navbar>
+        <Sidebar
           title="Raymond He"
-          linkOne="About"
+          linkOne="Home"
           linkTwo="Contact"
           linkThree="Portfolio"
-        ></Navbar> */}
+        ></Sidebar>
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
