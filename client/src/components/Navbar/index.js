@@ -7,10 +7,13 @@ function Navbar(props) {
     <div id="content">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <button type="button" id="sidebarCollapse" className="btn btn-info">
-            <i className="fas fa-align-right"></i>
-            <span>Toggle Sidebar</span>
-          </button>
+        <div className="align-content-center">
+            <button type="button" className="btn btn-success btn-outline-light"  
+            onClick={props.onClick} 
+            data-toggle={props.dataToggle} 
+            data-target={props.dataTargetID}>
+              {props.title}</button>
+        </div>
         </div>
       </nav>
     </div>

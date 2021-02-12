@@ -3,9 +3,10 @@ import "./style.css";
 
 
 function Sidebar(props) {
+    const closeSidebar = props.closeSide ? "active" : "not-active";
     return (
         <div className="wrapper">
-            <nav id="sidebar">
+            <nav id="sidebar" className={closeSidebar}>
                 <div className="sidebar-header">
                     <h3>{props.title}</h3>
                 </div>

@@ -11,24 +11,29 @@ import { Container, Row, Col } from "./components/Grid";
 class App extends Component {
 
   state = {
-    collapseSidebar: "active"
+    sidebarButton: false
   };
 
   componentDidMount() {
-
-    let sidebarCollapse = (id) => {
-      (id).toggleClass("active");
-    } 
-  //   $('#sidebarCollapse').on('click', function () {
-  //     $('#sidebar').toggleClass('active');
-  // });
-
   }
+   activeSidebar = (event) => {
+      event.preventDefault();
+      console.log("click is working");
+      this.state.sidebarButton == true ? this.setState({sidebarButton: false})
+       :
+      this.setState({sidebarButton: true})
+      console.log("If false " + this.state.sidebarButton) 
+    }; 
+  
 
   render() {
     return (
       <Router>
         <Navbar
+         onClick={this.activeSidebar}
+         data-toggle=""
+         data-target=""
+         title="Toggle Menu"
         ></Navbar>
         <div>
         <Sidebar
@@ -36,6 +41,7 @@ class App extends Component {
           linkOne="Home"
           linkTwo="Contact"
           linkThree="Portfolio"
+          closeSide={this.state.sidebarButton}
         ></Sidebar>
         </div>
         <div className="content">
