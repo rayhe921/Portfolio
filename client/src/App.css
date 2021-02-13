@@ -28,3 +28,14 @@ body{
   to { transform: rotate(360deg); }
 }
 
+/* .content{
+  position:relative;
+  top: 4px;
+  left: 100px;
+} */
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}

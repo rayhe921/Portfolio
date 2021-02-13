@@ -11,10 +11,12 @@ class About extends Component {
   render() {
     return (
       <Container>
-        <div className="wrapper">
-            <Card className="content"
+        <div className="card">
+            <Card 
               img={Selfie}
+              className="text"
             >
+              <p className="text">
               Welcome to my profile page. My name is Raymond He and I am a full stack developer currently looking for
               a front end or back end developer position. I have completed my full stack web development course and
               I am eager learn more about software development.
@@ -25,6 +27,7 @@ class About extends Component {
                   I am currently learning Java for a stronger back-end language.
                   <br />
                   Feel free to reach out to me on my contact page if you know of any opportunities in software development.
+                  </p>
        </Card>
        
         </div>

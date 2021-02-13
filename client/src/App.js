@@ -29,12 +29,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar
-         onClick={this.activeSidebar}
-         data-toggle=""
-         data-target=""
-         title="Toggle Menu"
-        ></Navbar>
+        <div className="wrapper">
         <div>
         <Sidebar
           title="Raymond He"
@@ -45,11 +40,16 @@ class App extends Component {
         ></Sidebar>
         </div>
         <div className="content">
+        <Navbar
+         onClick={this.activeSidebar}
+         title="Toggle Menu"
+        ></Navbar>
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/portfolio" component={Portfolio} />
         </Switch>
+        </div>
         </div>
       </Router>
     );
