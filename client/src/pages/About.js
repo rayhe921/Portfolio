@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
 import { Container, Row, Col } from "../components/Grid";
-import Selfie from "../utils/img/selfie.jpeg";
+import Selfie from "../utils/img/portrait.jpg";
 import "./style.css";
 
 class About extends Component {

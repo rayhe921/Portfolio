@@ -33,9 +33,14 @@ class App extends Component {
         <div>
         <Sidebar
           title="Raymond He"
-          linkOne="Home"
-          linkTwo="Contact"
-          linkThree="Portfolio"
+          email="Email"
+          github="Github"
+          linkedIn="LinkedIn"
+          resume="Resume"
+          linkOne="mailto:rayhe921@gmail.com"
+          linkTwo="https://github.com/rayhe921"
+          linkThree="https://www.linkedin.com/in/raymond-he-7086545a"
+          linkFour="https://drive.google.com/file/d/1JUPCPCCRIVjmAfSGsqsHot-cjqi9ZTSb/view?usp=sharing"
           closeSide={this.state.sidebarButton}
         ></Sidebar>
         </div>

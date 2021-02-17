@@ -10,35 +10,33 @@ function Sidebar(props) {
                 <div className="sidebar-header">
                     <h3>{props.title}</h3>
                 </div>
-
                 <ul className="list-unstyled components">
                     <p>Dummy Heading</p>
                     <li>
-                        <a href="#">About</a>
+                        <a href="/">About</a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
+                        <a href="/portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Contact</a>
                         <ul className="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="#">Page 1</a>
+                                <a href={props.linkOne}>{props.email}</a>
                             </li>
                             <li>
-                                <a href="#">Page 2</a>
+                                <a href={props.linkTwo}>{props.github}</a>
                             </li>
                             <li>
-                                <a href="#">Page 3</a>
+                                <a href={props.linkThree}>{props.linkedIn}</a>
+                            </li>
+                            <li>
+                                <a href={props.linkFour}>{props.resume}</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
                 </ul>
             </nav>
-
         </div>
     )
 };
