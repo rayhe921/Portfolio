@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import VertCard from "../components/VertCard";
-import {Container, Row, Col} from "../components/Grid";
+import {Container, Row} from "../components/Grid";
 import projects from "../utils/projects.json";
-
+import "./portfolioStyle.css";
 
 class Portfolio extends Component {
 
@@ -14,6 +14,7 @@ class Portfolio extends Component {
   render() {
     return (
       <Container>
+        <Row>
       {this.state.projects.map(projects => (
           <VertCard
             key={projects.id}
@@ -24,6 +25,7 @@ class Portfolio extends Component {
             projectLink={projects.projectLink}
           ></VertCard>
       ))}
+      </Row>
       </Container>
     );
   }

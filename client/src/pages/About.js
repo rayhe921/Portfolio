@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
-import { Container, Row, Col } from "../components/Grid";
+import { Container } from "../components/Grid";
 import Selfie from "../utils/img/portrait.jpg";
 import "./style.css";
 

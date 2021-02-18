@@ -1,8 +1,4 @@
-.image-size{
-        width: 120px;
-        height: auto;
-        float: left;
-        margin: 3px;
-        padding: 3px;
-    };
 
+.title-style{
+    color: azure !important;
+};

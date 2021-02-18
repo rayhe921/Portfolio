@@ -3,23 +3,14 @@ import "./style.css";
 
 function VertCard(props) {
   return (
-    <div className="row">
-      <div className="col s12 m7 l6">
-        <div className="card">
-          <div className="card-image image-size">
-            <img src={props.image} alt={props.title} />
-            
-          </div>
-          <div className="card-content">
-          <span className="card-title">{props.title}</span>
-            <p>{props.summary}</p>
-          </div>
-          <div className="card-action">
-            <a href={props.githubLink} target="_blank" rel="noopener noreferrer">Github Link</a>
-          </div>
-          <div className="card-action">
-            <a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="waves-effect waves-light btn">View Project</a>
-          </div>
+    <div className="card">
+      <img src={props.image} className="card-img-top" alt={props.title} />
+      <div className="card-body">
+        <h5 className="card-title title-style">{props.title}</h5>
+        <p className="card-text">{props.summary}</p>
+        <div className="button-ori">
+        <a href={props.githubLink} className="btn btn-primary">Github Link</a>
+        <a href={props.projectLink} className="btn btn-primary">Project Link</a>
         </div>
       </div>
     </div>
