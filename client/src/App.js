@@ -4,7 +4,7 @@ import "./App.css";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio"
 import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 
 class App extends Component {
 
