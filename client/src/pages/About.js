@@ -11,10 +11,9 @@ class About extends Component {
   render() {
     return (
       <Container>
-        <div className="card">
+        <div>
             <Card 
               img={Selfie}
-              className="text"
             >
               <p className="text">
               Welcome to my profile page. My name is Raymond He and I am a full stack developer currently looking for
@@ -24,7 +23,7 @@ class About extends Component {
                   My current skill set involves HTML5, CSS3, JavaScript, jQuery, Bootstrap, Node.js, MySQL, MongoDB,
                   Express, React.js, Git, and Firebase.
                   <br />
-                  I am currently learning Java for a stronger back-end language.
+                  My current project involves learning Java for a stronger back-end language.
                   <br />
                   Feel free to reach out to me on my contact page if you know of any opportunities in software development.
                   </p>
