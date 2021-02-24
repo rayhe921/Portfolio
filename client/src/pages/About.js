@@ -11,7 +11,6 @@ class About extends Component {
   render() {
     return (
       <Container>
-        <div>
             <Card 
               img={Selfie}
             >
@@ -28,8 +27,6 @@ class About extends Component {
                   Feel free to reach out to me on my contact page if you know of any opportunities in software development.
                   </p>
        </Card>
-       
-        </div>
       </Container>
     );
   }
