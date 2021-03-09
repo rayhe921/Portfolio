@@ -5,7 +5,7 @@ import "./style.css";
 function Sidebar(props) {
     const closeSidebar = props.closeSide ? "active" : "not-active";
     return (
-        <div className="wrapper mr0">
+        <div className="sWrapper mr0">
             <nav id="sidebar" className={closeSidebar}>
                 <div className="sidebar-header">
                     <h3>{props.title}</h3>
