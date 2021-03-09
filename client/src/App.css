@@ -33,3 +33,7 @@ body{
   width: 100%;
   align-items: stretch;
 }
+
+.content{
+  margin-left: 250px;
+}
