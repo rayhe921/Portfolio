@@ -40,7 +40,7 @@ class App extends Component {
               closeSide={this.state.sidebarButton}
             ></Sidebar>
           </div>
-          <div className="content col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+          <div className="content">
             <Navbar
               onClick={this.activeSidebar}
               title="Toggle Menu"

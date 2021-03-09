@@ -3,7 +3,7 @@ import "./style.css";
 
 function VertCard(props) {
   return (
-    <div className="card">
+    <div className="card vcard">
       <img src={props.image} className="card-img-top" alt={props.title} />
       <div className="card-body">
         <h5 className="card-title title-style">{props.title}</h5>

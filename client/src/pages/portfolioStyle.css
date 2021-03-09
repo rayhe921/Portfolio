@@ -1,10 +1,9 @@
-.card{
-    background-color: rgb(39, 38, 39) !important;
-    border-style: solid !important;
-    width: 12rem !important;
-    margin-bottom: 10px !important;
-    margin-left: 10px !important;
-
+.vcard{
+    background-color: rgb(39, 38, 39);
+    border-style: solid;
+    width: 12rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
 };
 
 .card-title{
