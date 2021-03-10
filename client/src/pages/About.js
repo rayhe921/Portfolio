@@ -12,6 +12,7 @@ class About extends Component {
     return (
       <Container>
             <Card 
+              className="pcard"
               img={Selfie}
             >
               <p className="text">
